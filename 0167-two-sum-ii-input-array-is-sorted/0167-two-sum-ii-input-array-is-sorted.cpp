@@ -4,7 +4,7 @@ public:
         int n=a.size();
         int low=0;
         int high=n-1;
-        vector<int> res(2);
+        vector<int> result(2);
         while(low<high){
             int sum = a[low]+a[high];
             if(sum<target){
@@ -14,11 +14,11 @@ public:
                 high--;
             }
             else{
-                res[0]=low+1;
-                res[1]=high+1;
+                result[0]=low+1;
+                result[1]=high+1;
                 break;
             }
         }
-        return res;
+        return result;
     }
 };
